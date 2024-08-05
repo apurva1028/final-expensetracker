@@ -5,6 +5,10 @@ import { Schema, model } from "mongoose";
 //debit: money goes out
 
 const transactionSchema = new Schema({
+    title:{
+        type: String,
+        required: true,
+    },
     amount:{
         type: Number,
         required:true,
